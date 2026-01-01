@@ -202,7 +202,7 @@ def update_book_data(
 
 
 def enhance_export(options: dict, login_prompt: Callable | None = None) -> None:
-    if "genre_votes" in options:
+    if options["genre_votes"]:
         try:
             genre_votes = float(
                 options["genre_votes"].strip().removesuffix("%").strip()

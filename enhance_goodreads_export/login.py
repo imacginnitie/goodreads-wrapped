@@ -20,7 +20,7 @@ def login(login_prompt: Callable | None) -> requests.Session:
         login_prompt = default_login_prompt
 
     print("Setting up webdriver for interactive login")
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    driver = webdriver.Chrome()
 
     print("Getting sign-in page and waiting for login")
     driver.get("https://www.goodreads.com/user/sign_in")

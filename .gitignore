@@ -7,3 +7,23 @@ __pycache__/
 /.mypy_cache
 # IDE files
 /.idea
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Personal data files (GoodReads exports, book covers)
+goodreads_library_export*.csv
+goodreads_list*.html
+book_covers/
+enhance_goodreads_export/import time.py
+
+# Generated visualizations (uncomment to ignore, or keep as examples)
+# reading_journey*.gif
+# reading_journey*.mp4
+# reading_heatmap*.png
+# reading_plot*.png
